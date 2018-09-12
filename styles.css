@@ -41,7 +41,7 @@ h1 {
     width: 0%;
     height: 100%;
     background: #72849b;
-    animation: block-cover 1.5s cubic-bezier (0.19, 1, cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation: block-cover 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 1s;
 }
 
