@@ -1,0 +1,47 @@
+html,body {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    width: 100%;
+    height:100vh;
+    background:url('bg.jpeg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color:#FFFFFF;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding:20px;
+    position: absolute;
+    top:40%;
+    left:46%;
+    transform: translate(-50%, -50%);
+}
+
+.block-cover {
+    position: absolute;
+}
+
+.block-cover span {
+    opacity: 0;
+    animation: appear-text 0.0001 linear forwards;
+    animation-delay: 1.4s;
+}
+
+.block-cover:after {
+    content: '';
+    top:0;
+    left:0;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #72849b;
+    animation: block-cover 1.5s cubic-bezier (0.19, 1, cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
+}
+
