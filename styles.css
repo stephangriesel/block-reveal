@@ -29,7 +29,7 @@ h1 {
 
 .block-cover span {
     opacity: 0;
-    animation: appear-text 0.0001 linear forwards;
+    animation: reveal-text 0.0001s linear forwards;
     animation-delay: 1.4s;
 }
 
@@ -43,5 +43,44 @@ h1 {
     background: #72849b;
     animation: block-cover 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 1s;
+}
+
+@keyframes block-cover {
+    0% {
+        left:0;
+        width: 0%;
+    }
+    50% {
+        left:0;
+        width: 100%;
+    }
+    100% {
+        left:100%;
+        width:0%;
+    }
+}
+
+@keyframes reveal-text {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#block-two {
+    top:50%;
+    left:58%;
+}
+
+#block-two span {
+    animation-delay: 2s;
+}
+
+#block-two.block-cover:after {
+    background: #222427;
+    animation-delay: 1.4s;
 }
 
